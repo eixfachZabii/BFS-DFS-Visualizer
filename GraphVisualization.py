@@ -77,10 +77,11 @@ def main():
     create_binary_tree(gv, 0, num_nodes)
     gv.set_node_positions(0, 0, 0, 0, 10)  # Root position is (0,0), adjust width for proper spacing
 
+
     # Startknoten für BFS
     start_node = 0
-    visited = gv.bfs(start_node)
-    print(f"Besuchte Knoten in BFS Reihenfolge: {visited}")
+    visited = gv.dfs(start_node)
+    print(f"Besuchte Knoten in DFS Reihenfolge: {visited}")
 
 
 if __name__ == "__main__":
